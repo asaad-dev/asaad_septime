@@ -1,0 +1,76 @@
+body {
+    background: #FDF6E6;
+    
+}
+#main {
+    background: #fff;
+    width: 1000px;
+    margin: 0 auto;
+}
+header {
+    background: #FEA500;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+   width: 1000px;
+   height: 500px;
+}
+
+/* les sections */
+.plat img {
+    float: left;
+}
+
+.plat .texte {
+    padding: 10%; 
+}
+
+.salle img {
+    float: right;
+  
+}
+
+.salle div {
+float: left;
+width: 500px;
+padding-top: 80px;
+}
+
+.service img {
+    float: left;
+}
+.service div {
+    float: right;
+    width: 500px;
+    padding-top: 80px;
+}
+
+.dressage img {
+    float: right;
+}
+
+.dressage div {
+   float: left;
+   width: 500px;
+   padding-top: 80px;
+  
+}
+
+.gout img {
+    float: left;
+}
+
+.gout div {
+   float: right;
+   width: 500px;
+   padding-top: 80px;
+}
+
+ footer {
+    background: #FF4500;
+    text-align: center;
+}
+
+
