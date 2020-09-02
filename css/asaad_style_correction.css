@@ -1,0 +1,116 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin de reset   */
+
+body {
+    background: oldlace;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* le conteneur principal auto-centré */
+#conteneur {
+    width: 1000px;
+    margin: auto;
+    background: #fff;
+}
+header {
+    background: orange;
+    text-align: center;
+    height: 250px;
+}
+
+footer {
+    height: 250px;
+    background: orange;
+    text-align: center;
+}
+
+/* les sous-section dans les div contenues dans les section principales */
+.sous-section {
+    width: 500px;
+    height: 500px;
+    float: left;
+    /* background: red; */
+    /* line-height: 500px; */
+    padding-top: 15%;
+    box-sizing: border-box;
+}
+
+/* la classe pour rétablir le flux */
+.clear {
+    clear: both;
+}
+
+/* 2em méthode */
+/* les classes pour les images en background */
+.assiette {
+    background: url("../img/assiette.jpg") no-repeat;
+    /* centré horizontalement et verticalement dans le parent */
+    object-position: 50% 50%;
+}
+
+.resto-01 {
+/* si l'image est plus grande que le parent */
+    /* background-image: url("../img/resto_01.jpg");
+    background-position: center;
+    background-size: cover; */
+    background: url("../img/resto_01.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-02 {
+    background: url("../img/resto_02.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-03 {
+    background: url("../img/resto_03.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-04 {
+    background: url("../img/resto_04.jpg");
+    object-position: 50% 50%;
+}

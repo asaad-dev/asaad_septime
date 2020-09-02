@@ -72,5 +72,8 @@ padding-top: 80px;
     background: #FF4500;
     text-align: center;
 }
+footer hr {
+    width: 500px;
+}
 
 

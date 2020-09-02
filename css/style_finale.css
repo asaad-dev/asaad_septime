@@ -1,0 +1,222 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fin de reset   */
+
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* le conteneur principal auto-centré */
+#conteneur {
+    width: 1000px;
+    margin: auto;
+    background: #EEE;
+}
+
+header {
+    padding: 60px;
+    text-align: center;   
+    width: 500px;
+    margin: auto;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+header p {
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 12px;
+}
+
+nav {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+    /* display: inline; */
+}
+
+footer {
+    height: 400px;
+    text-align: center;
+    padding: 50px;
+    width: 500px;
+    margin: auto;
+}
+
+footer h3 {
+    font-size: 2em;
+    font-weight: bold;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+footer address {
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+footer em {
+    font-style: italic;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* button */
+.button {
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 0 10px 10px;
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.button .fa-star {
+    color: #fff;
+    margin-left: 10px;
+}
+
+.button .fa-star:hover {
+    color: grey;
+}
+
+/* les sous-section dans les div contenues dans les section principales */
+.sous-section {
+    width: 500px;
+    height: 500px;
+    float: left;
+    /* line-height: 500px; */
+    padding: 15% 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.sous-section h3 {
+    border-bottom: 1px solid #000;
+    /* padding: 10px 10px 10px 0; */
+    line-height: 50px;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.sous-section p {
+    font-style: italic;
+    font-weight: bold;
+    line-height: 22px;
+    padding-top: 10px;
+}
+
+/* la classe pour rétablir le flux */
+.clear {
+    clear: both;
+}
+
+/* 2em méthode */
+/* les classes pour les images en background */
+.assiette {
+    background: url("../img/assiette.png") no-repeat;
+    /* centré horizontalement et verticalement dans le parent */
+    object-position: 50% 50%;
+}
+
+#assiette h3 {
+    font-style: italic;
+    text-align: right;
+    text-transform: none;
+}
+
+#assiette p {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#assiette .sous-section {
+    padding-right: 220px;
+}
+
+.resto-01 {
+/* si l'image est plus grande que le parent */
+    /* background-image: url("../img/resto_01.jpg");
+    background-position: center;
+    background-size: cover; */
+    background: url("../img/resto_01.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-02 {
+    background: url("../img/resto_02.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-03 {
+    background: url("../img/resto_03.jpg");
+    object-position: 50% 50%;
+}
+
+.resto-04 {
+    background: url("../img/resto_04.jpg");
+    object-position: 50% 50%;
+}
