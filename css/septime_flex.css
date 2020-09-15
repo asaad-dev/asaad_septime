@@ -1,0 +1,148 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+}
+
+#conteneur {
+    width: /* 66.666666% */ 1000px;
+    margin: 0 auto;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+/* SECTION // display: flex pour les deux div (texte + img) dans chacue section */
+section {
+    height: 500px;
+    display: flex;
+    /* flex-direction: row;  par défaut */
+}
+
+/* HEADER */
+header {
+    padding-top: 80px;
+    width: 50%;
+    margin: auto;
+    height: 250px;
+    text-align: center;
+}
+
+header p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+header h1 {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    width: 30%;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #000;
+}
+
+/* typo pour la assiette dans la premier section*/
+.assiette-typo {
+    text-align: right;
+    /* padding: 50px 0px 0 0; */
+}
+
+.assiette-typo h3 {
+    text-transform: none;
+    font-style: italic;
+    letter-spacing: normal;
+    padding: 0;
+    margin: 0;
+    margin-top: 130px;
+    border: none;
+}
+
+.assiette-typo p{
+    text-transform: uppercase;
+    font-style: normal;
+    padding-top: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+/* typo pour tous les h3 dans les section */
+section h3 {
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+    padding: 150px 0 2px;
+    margin: 10px;
+    letter-spacing: 3px;
+    font-size: 1.5em;
+}
+
+/* typo pour toutes les paragraphes dans les section */
+section p {
+    font-style: italic;
+    font-size: 1em;
+    margin: 10px;
+    line-height: 22px;
+}
+
+/* la note */
+.note {
+    background: rgba(218, 218, 218, 0.623);
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    height: 400px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer h3 {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1.5em;
+    font-size: 2em;
+}
+
+footer figcaption {
+    position: relative;
+    bottom: 100px;
+    font-weight: bolder;
+}
+
+footer img {
+    opacity: 0.30;
+}

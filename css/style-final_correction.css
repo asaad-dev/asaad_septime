@@ -1,0 +1,267 @@
+/* RAJOUT BOX-SIZING SUR BODY */
+/* ERIC MEYER RESET */
+
+body {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIN DU RESET  */
+
+/* font-family: 'Cormorant Garamond', serif; */
+
+body {
+    background-color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.clear {
+    clear: both;
+}
+
+#conteneur {
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+}
+
+header {
+    padding-top: 50px;
+    text-align: center;
+    height: 200px;
+    width: 500px;
+    margin: auto;
+}
+
+header p {
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+p {
+    font-style: italic;
+    font-size: 1.1em;
+    padding-top: 16px;
+}
+
+.note {
+    background: rgba(218, 218, 218, 0.623);
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 5px;
+    padding: 5px;
+    width: 50%;
+    padding: 0 0 15px 10px;
+    border-radius: 15px;
+}
+
+/* STYLE POUR ASSIETTE */
+
+#assiette .texte {
+    text-align: right;
+    padding-right: 200px;
+}
+
+#assiette h3 {
+    margin-top: 60px;
+    text-transform: none;
+    font-style: italic;
+    letter-spacing: normal;
+    border: none;
+    padding: 0;
+}
+
+#assiette hr {
+    position: relative;
+    left: -225px;
+    width: 510px;
+    z-index: 2;
+    color: black;
+    border: 1px solid #000;
+}
+
+#assiette p {
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: right;
+    padding-top: 0;
+}
+
+footer {
+    height: 350px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+footer h3 {
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    line-height: 45px;
+    letter-spacing: .3em;
+    width: 500px;
+    margin: auto;
+    padding: 0;
+}
+
+address {
+    font-family: serif;
+    font-size: smaller;    
+    text-transform: uppercase;
+}
+
+em {
+    font-style: italic;
+    line-height: 26px;
+}
+
+
+/* les sous-sections dans les divs contenues dans les sections principales */
+
+.sous-section {
+    width: 500px;
+    height: 500px;
+    float: left;
+    padding: 150px 15px 0 15px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
+
+/* les classes pour les images en background url */
+
+.assiette {
+    background: url("../img/assiette.png") transparent no-repeat;
+    object-position: 50% 50%;
+}
+
+.resto-01 {
+    /* si l'image est plus grande que son parent */
+    /* background-image: url("../img/resto_01.jpg");
+    background-position: center;
+    background-size: cover; */
+    /* sinon */
+    background: url("../img/resto_01.jpg") no-repeat;
+    object-position: 50% 50%;
+}
+
+.resto-02 {
+    background: url("../img/resto_02.jpg") no-repeat;
+    object-position: 50% 50%;
+}
+
+.resto-03 {
+    background: url("../img/resto_03.jpg") no-repeat;
+    object-position: 50% 50%;
+}
+
+.resto-04 {
+    background: url("../img/resto_04.jpg") no-repeat;
+    object-position: 50% 50%;
+}
+/* 
+.plan {
+    height: 250px;
+    background: url("../img/plan.png") no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: contain;
+    opacity: .5;
+}
+
+.plan p {
+    background: transparent;
+    background-image: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 80px;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+} */
+
+figcaption {
+    position: relative;
+    bottom: 100px;
+    font-weight: bolder;
+}
+
+footer img {
+    opacity: .5;
+}
